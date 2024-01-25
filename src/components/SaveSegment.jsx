@@ -27,7 +27,7 @@ function SaveSegment(props) {
       segment_name: segmentName,
       schema: {
         ...prevData.schema,
-        ...addList,
+        ...list,
       },
     }));
 
@@ -42,6 +42,9 @@ function SaveSegment(props) {
     e.preventDefault();
 
     console.log(data);
+    alert(
+      "As mentioned earlier through mail, I'm not able to send the required data through backend api, so i printed the data in the CONSOLE"
+    );
     setShowSegmentName("");
   };
 
