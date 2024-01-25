@@ -1,0 +1,58 @@
+.heading {
+  margin: 0;
+  padding: 1px;
+  padding-left: 25px;
+  font-size: 20px;
+  background-color: rgb(169, 225, 241);
+}
+
+.container {
+  display: flex;
+  gap: 5px;
+}
+.left-container {
+  padding: 0px 5px 5px 30px;
+  /* border: 1px solid red; */
+  margin-top: 30px;
+  width: 50%;
+}
+
+.right-container {
+  border-left: 2px solid rgb(196, 192, 192);
+  margin-top: 30px;
+  width: 50%;
+}
+
+.btn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn button {
+  background-color: rgb(125, 235, 183);
+}
+
+.input_val {
+  height: 25px;
+  width: 50%;
+  padding: 2px;
+  /* margin-top: 20px; */
+}
+
+.blue_box {
+  height: 250px;
+  width: 500px;
+  border-radius: 15px;
+  border: 2.5px solid rgb(107, 119, 187);
+  margin: 30px 0px 30px 50px;
+}
+
+.segmentlist {
+  margin: 10px;
+  border-radius: 5px;
+  width: 50%;
+  height: 30px;
+  border: 1px solid rgb(190, 188, 188);
+}
