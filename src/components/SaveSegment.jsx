@@ -21,6 +21,16 @@ function SaveSegment(props) {
     setAddList(list);
     // console.log(list);
     setShowSegmentName(segmentName);
+
+    setData((prevData) => ({
+      ...prevData,
+      segment_name: segmentName,
+      schema: {
+        ...prevData.schema,
+        ...addList,
+      },
+    }));
+
     setSegmentName("");
   };
 
@@ -30,14 +40,6 @@ function SaveSegment(props) {
     // .then(res => console.log(res) )
     // .catch(err => console.log(err.message))
     e.preventDefault();
-    setData((prevData) => ({
-      ...prevData,
-      segment_name: showSegmentName,
-      schema: {
-        ...prevData.schema,
-        ...addList,
-      },
-    }));
 
     console.log(data);
     setShowSegmentName("");
@@ -113,9 +115,7 @@ function SaveSegment(props) {
             <div className="blue_box">
               {showSegmentName !== "" ? (
                 <select className="segmentlist">
-                  <option value="" disabled selected>
-                    <h4>{showSegmentName}</h4>
-                  </option>
+                  <option value="">{showSegmentName}</option>
                   {addList.map((item, index) => (
                     <option key={index} disabled>
                       {item.label}
